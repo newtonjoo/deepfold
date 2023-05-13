@@ -2,7 +2,7 @@
 
 > We have developed a new pipeline of protein structure prediction called **DeepFold**, that improves the accuracy of side-chain predictions as well as that of backbones by leveraging AlphaFold2.
 
-- First, we optimized the loss functions of side chains by considering the sequential dependence of each torsion angle
+- First, we optimized the loss functions of side chains by considering the sequential dependence of each torsion angle.
 - Second, we enhanced template features to capture better structural context between residue pairs by employing advanced sequence alignment methods and exploring the structure database. 
 - Last, we implemented a reoptimization step that utilizes the energy function of molecular mechanics and an advanced global optimization method to enhance the structural validity of the prediction.
 
