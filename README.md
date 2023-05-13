@@ -1,7 +1,10 @@
 # Protein 3D Structure Prediction with DeepFold
 
-> For CASP15 experiment, we have developed a new pipeline of protein structure prediction called **DeepFold** based on AlphaFold2 (AF2), which focuses on the more precise backbone and the sidechain prediction. 
+> For CASP15 experiment, we have developed a new pipeline of protein structure prediction called **DeepFold**, a pipeline that improves the accuracy of side-chain predictions as well as that of backbones by leveraging AlphaFold2.
 > We modified the loss functions in AF2, especially the torsion angle losses and introduced additional loss functions for the sidechain confidence and the secondary structure prediction.
+> First, we optimized the loss functions of side chains by considering the sequential dependence of each torsion angle
+> Second, we enhanced template features to capture better structural context between residue pairs by employing advanced sequence alignment methods and exploring the structure database. 
+> Last, we implemented a reoptimization step that utilizes the energy function of molecular mechanics and an advanced global optimization method to enhance the structural validity of the prediction.
 
 This package provides an implementation of **DeepFold**, a trainable, Transformer-based deep protein folding model. We modified the open-source code of [DeepMind AlphaFold v2.0](https://github.com/deepmind/alphafold) and [Uni-Fold-jax](https://github.com/dptech-corp/Uni-Fold-jax). 
 
