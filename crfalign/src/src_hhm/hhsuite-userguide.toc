@@ -1,0 +1,35 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}Installation of the HH-suite and its databases}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Installation}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}HHblits databases}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}HHsearch databases}{7}{subsection.2.3}
+\contentsline {section}{\numberline {3}Brief tutorial to HH-suite tools}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}Overview of programs}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Searching databases of HMMs using HHsearch and HHblits}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Generating a multiple sequence alignment using HHblits}{10}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Building customized databases}{11}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Maximum Accuracy alignment algorithm}{13}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}How can I verify if a database match is homologous?}{14}{subsection.3.6}
+\contentsline {section}{\numberline {4}Frequently asked questions}{15}{section.4}
+\contentsline {section}{\numberline {5}HHsearch/HHblits output: hit list and pairwise alignments}{17}{section.5}
+\contentsline {subsection}{\numberline {5.1}Summary hit list}{17}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}HMM-HMM pairwise alignments}{19}{subsection.5.2}
+\contentsline {section}{\numberline {6}File formats}{20}{section.6}
+\contentsline {subsection}{\numberline {6.1}Input alignment formats}{20}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}HHsearch/HHblits model format (hhm-format)}{23}{subsection.6.2}
+\contentsline {section}{\numberline {7}Summary of command-line parameters}{25}{section.7}
+\contentsline {subsection}{\numberline {7.1}{\tt hhblits} -- HMM-HMM-based lighting-fast iterative sequence search}{25}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}{\tt hhsearch} -- search a database of HMMs with a query MSA or HMM}{27}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}{\tt hhmake} -- build an HMM from an input MSA}{28}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}{\tt hhfilter} -- filter an MSA}{29}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}{\tt hhalign} -- Align a query MSA/HMM to a template MSA/HMM}{30}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}{\tt reformat.pl} -- reformat one or many alignments}{31}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}{\tt addss.pl} -- add predicted secondary structure to an MSA or HMM}{32}{subsection.7.7}
+\contentsline {subsection}{\numberline {7.8}{\tt hhmakemodel.pl} -- generate MSAs or coarse 3D models from HHsearch results file}{32}{subsection.7.8}
+\contentsline {subsection}{\numberline {7.9}{\tt hhblitsdb.pl} -- Build an HHblits database }{33}{subsection.7.9}
+\contentsline {subsection}{\numberline {7.10}{\tt multithread.pl} -- Run a command for many files in parallel using multiple threads}{34}{subsection.7.10}
+\contentsline {section}{\numberline {8}Changes from previous versions}{34}{section.8}
+\contentsline {subsection}{\numberline {8.1}2.0.2 (January 2012)}{34}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}1.6.0 (November 2010)}{35}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}1.5.0 (August 2007)}{36}{subsection.8.3}
+\contentsline {section}{\numberline {9}License}{38}{section.9}

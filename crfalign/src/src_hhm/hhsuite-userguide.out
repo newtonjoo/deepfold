@@ -1,0 +1,35 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}
+\BOOKMARK [1][-]{section.2}{Installation of the HH-suite and its databases}{}
+\BOOKMARK [2][-]{subsection.2.1}{Installation}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{HHblits databases}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{HHsearch databases}{section.2}
+\BOOKMARK [1][-]{section.3}{Brief tutorial to HH-suite tools}{}
+\BOOKMARK [2][-]{subsection.3.1}{Overview of programs}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{Searching databases of HMMs using HHsearch and HHblits}{section.3}
+\BOOKMARK [2][-]{subsection.3.3}{Generating a multiple sequence alignment using HHblits}{section.3}
+\BOOKMARK [2][-]{subsection.3.4}{Building customized databases}{section.3}
+\BOOKMARK [2][-]{subsection.3.5}{Maximum Accuracy alignment algorithm}{section.3}
+\BOOKMARK [2][-]{subsection.3.6}{How can I verify if a database match is homologous?}{section.3}
+\BOOKMARK [1][-]{section.4}{Frequently asked questions}{}
+\BOOKMARK [1][-]{section.5}{HHsearch/HHblits output: hit list and pairwise alignments}{}
+\BOOKMARK [2][-]{subsection.5.1}{Summary hit list}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{HMM-HMM pairwise alignments}{section.5}
+\BOOKMARK [1][-]{section.6}{File formats}{}
+\BOOKMARK [2][-]{subsection.6.1}{Input alignment formats}{section.6}
+\BOOKMARK [2][-]{subsection.6.2}{HHsearch/HHblits model format \(hhm-format\)}{section.6}
+\BOOKMARK [1][-]{section.7}{Summary of command-line parameters}{}
+\BOOKMARK [2][-]{subsection.7.1}{hhblits -- HMM-HMM-based lighting-fast iterative sequence search}{section.7}
+\BOOKMARK [2][-]{subsection.7.2}{hhsearch -- search a database of HMMs with a query MSA or HMM}{section.7}
+\BOOKMARK [2][-]{subsection.7.3}{hhmake -- build an HMM from an input MSA}{section.7}
+\BOOKMARK [2][-]{subsection.7.4}{hhfilter -- filter an MSA}{section.7}
+\BOOKMARK [2][-]{subsection.7.5}{hhalign -- Align a query MSA/HMM to a template MSA/HMM}{section.7}
+\BOOKMARK [2][-]{subsection.7.6}{reformat.pl -- reformat one or many alignments}{section.7}
+\BOOKMARK [2][-]{subsection.7.7}{addss.pl -- add predicted secondary structure to an MSA or HMM}{section.7}
+\BOOKMARK [2][-]{subsection.7.8}{hhmakemodel.pl -- generate MSAs or coarse 3D models from HHsearch results file}{section.7}
+\BOOKMARK [2][-]{subsection.7.9}{hhblitsdb.pl -- Build an HHblits database }{section.7}
+\BOOKMARK [2][-]{subsection.7.10}{multithread.pl -- Run a command for many files in parallel using multiple threads}{section.7}
+\BOOKMARK [1][-]{section.8}{Changes from previous versions}{}
+\BOOKMARK [2][-]{subsection.8.1}{2.0.2 \(January 2012\)}{section.8}
+\BOOKMARK [2][-]{subsection.8.2}{1.6.0 \(November 2010\)}{section.8}
+\BOOKMARK [2][-]{subsection.8.3}{1.5.0 \(August 2007\)}{section.8}
+\BOOKMARK [1][-]{section.9}{License}{}

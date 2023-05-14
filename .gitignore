@@ -9,7 +9,7 @@ openmpi-4.1.1.tar.gz
 tags
 test.sh
 *.swp
-
+**/.svn
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
