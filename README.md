@@ -141,9 +141,9 @@ In either way, make sure you properly configurate the option `use_mpi` and `gpus
 
 ## 4. License and disclaimer.
 
-### 4.1 Deepfold code license.
+### 4.1 DeepFold code license.
 
-Copyright 2022 Deepfold Team.
+Copyright 2022 DeepFold Team.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
