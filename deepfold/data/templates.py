@@ -28,7 +28,6 @@ from deepfold.data import mmcif_parsing
 from deepfold.data import parsers
 from deepfold.data.tools import kalign
 import numpy as np
-
 import gzip             # by newton
 
 # Internal import (7716).
