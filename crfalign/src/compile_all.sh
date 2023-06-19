@@ -4,6 +4,7 @@
 
 export HHLIB=/gpfs/deepfold/programs/build/hhsuite-2.0.13
 
+# use intel compiler 
 module purge
 module load intel/compiler/latest
 module load intel/compiler-rt/latest
