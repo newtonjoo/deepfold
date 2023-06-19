@@ -202,7 +202,7 @@ CONFIG = ConfigDict({
       },
       'max_extra_msa': 1024,
       'msa_cluster_features': True,
-      'num_recycle': 3,
+      'num_recycle': 10,
       'reduce_msa_clusters_by_max_templates': False,
       'resample_msa_in_recycling': True,
       'template_features': [
@@ -592,7 +592,7 @@ CONFIG = ConfigDict({
         },
       }
     },
-    'num_recycle': 3,
+    'num_recycle': 10,
     'resample_msa_in_recycling': True
   },
 })
