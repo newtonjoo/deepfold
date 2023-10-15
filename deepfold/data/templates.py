@@ -28,7 +28,7 @@ from deepfold.data import mmcif_parsing
 from deepfold.data import parsers
 from deepfold.data.tools import kalign
 import numpy as np
-import gzip             # by newton
+import gzip
 
 # Internal import (7716).
 
@@ -687,7 +687,7 @@ def _read_file(path):
     return file_data
 
 @functools.lru_cache(16, typed=False)
-def _read_file_gz(path):                # by newton
+def _read_file_gz(path):
     with gzip.open(path, 'rb') as f:
       file_data = f.read()
     return file_data.decode('utf-8')
@@ -739,7 +739,7 @@ def _process_single_hit(
 
   cif_path = f'{mmcif_dir}/{hit_pdb_code[1:3]}/{hit_pdb_code}.cif.gz'
   if exists(cif_path):
-      cif_string = _read_file_gz(cif_path)      # by newton
+      cif_string = _read_file_gz(cif_path)
   else:
       cif_path = os.path.join(mmcif_dir, hit_pdb_code + '.cif')
       cif_string = _read_file (cif_path)
