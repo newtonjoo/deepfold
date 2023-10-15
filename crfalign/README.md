@@ -25,3 +25,8 @@ export PYTHONPATH=$PYTHONPATH:/net/newton/project/hhcrf/lib
 ```/bin/sh
 % ./src/compile_rev5_all.sh
 ```
+
+## Reference
+
+Lee, S. J. et al. CRFalign: A Sequence-structure alignment of proteins based on a combination of HMM-HMM
+comparison and conditional random fields. Molecules 27, 3711 (2022)
