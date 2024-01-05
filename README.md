@@ -139,9 +139,30 @@ sbatch run_train.sh
 
 In either way, make sure you properly configurate the option `use_mpi` and `gpus_per_node` in [`deepfold/train/train_config.py`](./deepfold/train/train_config.py).
 
-## 4. License and disclaimer.
+### 4 Citing this work
 
-### 4.1 DeepFold code license.
+If you use the deepfold code or the server, please cite
+
+```
+@article{10.1093/bioinformatics/btad712,
+    author = {Lee, Jae-Won and Won, Jong-Hyun and Jeon, Seonggwang and Choo, Yujin and Yeon, Yubin and Oh, Jin-Seon and Kim, Minsoo and Kim, SeonHwa and Joung, InSuk and Jang, Cheongjae and Lee, Sung Jong and Kim, Tae Hyun and Jin, Kyong Hwan and Song, Giltae and Kim, Eun-Sol and Yoo, Jejoong and Paek, Eunok and Noh, Yung-Kyun and Joo, Keehyoung},
+    title = "{DeepFold: enhancing protein structure prediction through optimized loss functions, improved template features, and re-optimized energy function}",
+    journal = {Bioinformatics},
+    volume = {39},
+    number = {12},
+    pages = {btad712},
+    year = {2023},
+    month = {11},
+    issn = {1367-4811},
+    doi = {10.1093/bioinformatics/btad712},
+    url = {https://doi.org/10.1093/bioinformatics/btad712},
+    eprint = {https://academic.oup.com/bioinformatics/article-pdf/39/12/btad712/54770684/btad712.pdf},
+}
+```
+
+## 5 License and disclaimer.
+
+### 5.1 DeepFold code license.
 
 Copyright 2022 DeepFold Team.
 
@@ -156,6 +177,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-### 4.2 Use of third-party software.
+### 5.2 Use of third-party software.
 
 Use of the third-party software, libraries or code may be governed by separate terms and conditions or license provisions. Your use of the third-party software, libraries or code is subject to any such terms and you should check that you can comply with any applicable restrictions or terms and conditions before use.
