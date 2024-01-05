@@ -141,7 +141,7 @@ In either way, make sure you properly configurate the option `use_mpi` and `gpus
 
 ### 4 Citing this work
 
-If you use the deepfold code or the server, please cite
+If you use the DeepFold code or server, please cite this work as follows:
 
 ```
 @article{10.1093/bioinformatics/btad712,
