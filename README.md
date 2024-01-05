@@ -139,7 +139,7 @@ sbatch run_train.sh
 
 In either way, make sure you properly configurate the option `use_mpi` and `gpus_per_node` in [`deepfold/train/train_config.py`](./deepfold/train/train_config.py).
 
-### 4 Citing this work
+## 4. Citing this work
 
 If you use the DeepFold code or server, please cite this work as follows:
 
@@ -160,7 +160,7 @@ If you use the DeepFold code or server, please cite this work as follows:
 }
 ```
 
-## 5 License and disclaimer.
+## 5. License and disclaimer.
 
 ### 5.1 DeepFold code license.
 
