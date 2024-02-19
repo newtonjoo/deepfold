@@ -20,13 +20,13 @@ We recommend using [Docker](https://www.docker.com/) to install the environment.
   docker build -f docker/Dockerfile -t deepfold .
 ```
 
-Mount the data folder on the docker and attach to bash.
+To mount the data folder on Docker and attach to bash, use the following command:
 ```bash
   docker run --gpus all -v "${DATA_DIR}:/app/deepfold/data" -it deepfold:latest
 ```
 
 ## 2. Inference with trained models.
-We provide the trained models on the [google drive](https://drive.google.com/drive/folders/1Qyq0oZo4NUv55X7N7LSjqJOZcmR23NV6?usp=sharing). Please download the models and put them in the `data/params` folder.
+We provide the trained models on [Google Drive](https://drive.google.com/drive/folders/1Qyq0oZo4NUv55X7N7LSjqJOZcmR23NV6?usp=sharing). Please download the models and place them in the `data/params` folder.
 
 
 ### 2.1 Infer from features.pkl.
@@ -37,7 +37,7 @@ We provide the [`run_from_pkl.py`](./run_from_pkl.py) script to support inferrin
 python run_from_pkl.py \
   --pickle_paths ./example_data/features/aa/1aac_1_A/features.pkl \
   --model_names model1 \
-  --model_paths params/model1.npz \
+  --model_paths data/params/model1.npz \
   --output_dir ./out
 ```
 

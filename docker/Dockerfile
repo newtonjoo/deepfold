@@ -22,9 +22,9 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
 
 # Install Miniconda package manager.
 RUN wget -q -P /tmp \
-  https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
-    && bash /tmp/Miniconda3-latest-Linux-x86_64.sh -b -p /opt/conda \
-    && rm /tmp/Miniconda3-latest-Linux-x86_64.sh
+  https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh \
+    && bash /tmp/Miniconda3-py37_4.12.0-Linux-x86_64.sh -b -p /opt/conda \
+    && rm /tmp/Miniconda3-py37_4.12.0-Linux-x86_64.sh
 
 # Install conda packages.
 ENV PATH="/opt/conda/bin:$PATH"
@@ -64,11 +64,11 @@ RUN ldconfig
 
 # Install pip packages.
 RUN pip3 install --upgrade pip \
-    && pip3 install -r /app/deepfold/requirements.txt \
-    && pip3 install mpi4jax==0.3.2 \
     && pip3 install jax==0.3.25 \
       jaxlib==0.3.25+cuda11.cudnn805 \
-    -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+    -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html \
+    && pip3 install mpi4jax==0.3.2 \
+    && pip3 install -r /app/deepfold/requirements.txt
 
 WORKDIR /app/deepfold
 ENTRYPOINT ["/bin/bash"]
