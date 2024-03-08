@@ -8,8 +8,8 @@ from os.path import exists
 import numpy as np
 import gzip
 
-from unifold.data.mmcif_parsing import parse as parse_mmcif_string
-from unifold.data.templates import _get_atom_positions as get_atom_positions
+from deepfold.data.mmcif_parsing import parse as parse_mmcif_string
+from deepfold.data.templates import _get_atom_positions as get_atom_positions
 from Bio.PDB import protein_letters_3to1
 
 mmcif_path = '/mnt/user/protein/database/pdb/data/structures/divided/mmCIF'
