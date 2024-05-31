@@ -52,9 +52,7 @@ from deepfold.relax.relax import AmberRelaxation
 # See README.md for more details.
 
 # Default paths. Note that these arguments can be set directly by flags from command line.
-default_database_dir = '.' 
-default_fasta_dir = './example_data/fasta/'
-default_output_dir = './out/features/'
+default_database_dir = ''
 
 # Set to database directory with Uniref90, MGnify, and BFD, Uniclust30 database.
 # Path to the Uniref90 database for use by JackHMMER.
@@ -176,6 +174,19 @@ def main(argv):
     logging.warning(f"`fasta_dir` {FLAGS.fasta_dir} is ignored, as "
                     f"`fasta_paths` {FLAGS.fasta_paths} is provided.")
   
+  # update data dir
+  if FLAGS.data_dir != '':
+    fn_prepend_dir = lambda x: os.path.join(FLAGS.data_dir, x)
+    FLAGS.template_mmcif_dir = fn_prepend_dir(FLAGS.template_mmcif_dir)
+    FLAGS.kalign_binary_path = fn_prepend_dir(FLAGS.kalign_binary_path)
+    FLAGS.obsolete_pdbs_path = fn_prepend_dir(FLAGS.obsolete_pdbs_path)
+    FLAGS.uniref90_database_path = fn_prepend_dir(FLAGS.uniref90_database_path)
+    FLAGS.mgnify_database_path = fn_prepend_dir(FLAGS.mgnify_database_path)
+    FLAGS.bfd_database_path = fn_prepend_dir(FLAGS.bfd_database_path)
+    FLAGS.uniclust30_database_path = fn_prepend_dir(FLAGS.uniclust30_database_path)
+    FLAGS.pdb70_database_path = fn_prepend_dir(FLAGS.pdb70_database_path)
+      
+  
   # Set template featurizer, data pipeline, and models.
   template_featurizer = templates.TemplateHitFeaturizer(
       mmcif_dir=FLAGS.template_mmcif_dir,
@@ -238,7 +249,7 @@ def main(argv):
   for id, fasta_path in protein_dict.items():
     try:
       predict_from_fasta(
-          fasta_path=fasta_paths,
+          fasta_path=fasta_path,
           name=id,
           output_dir=FLAGS.output_dir,
           data_pipeline=data_pipeline,

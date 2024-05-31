@@ -48,13 +48,14 @@ The command will generate structures (in PDB format) from input features predict
 Essentially, inferring the structures from given FASTA files includes two steps, i.e. generating the pickled features and predicting structures from them. We provided a script, [`run_from_fasta.py`](./run_from_fasta.py), as a friendlier user interface. An example usage would be
 
 ```bash
-python run_from_pkl.py \
-  --fasta_paths ./example_data/fasta/1aac_1_A.fasta \
+python run_from_fasta.py \
+  --fasta_paths ./example_data/fasta/aa/1aac_1_A.fasta \
   --model_names model1 \
   --model_paths params/model1.npz \
   --data_dir /path/to/database/directory
   --output_dir ./out
 ```
+If you need to change the default database paths (uniref90, mgnify, bfd, uniclust30, pdb70, template mmcif), you can use the flags in run_from_fasta.py.
 
 ## 3. Manual training
 
