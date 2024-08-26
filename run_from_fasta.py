@@ -70,7 +70,7 @@ bfd_database_path = os.path.join(
 
 # Path to the Uniclust30 database for use by HHblits.
 uniclust30_database_path = os.path.join(
-    default_database_dir, 'uniclust30', 'UniRef30_2020_06/UniRef30_2020_06')
+    default_database_dir, 'uniclust30', 'uniclust30_2018_08/uniclust30_2018_08')
 
 # Path to the PDB70 database for use by HHsearch.
 pdb70_database_path = os.path.join(default_database_dir, 'pdb70', 'pdb70')
@@ -218,7 +218,8 @@ def main(argv):
     model_runner = RunModel(
        config=model_config,
        params=model_params,
-       precision=precision)
+       precision=precision,
+       return_representations=True)
     model_runners[model_name] = model_runner
 
   logging.info(f"Input {len(model_runners)} models with "
